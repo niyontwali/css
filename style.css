@@ -1,0 +1,70 @@
+* {
+  text-align: center;
+  margin: 0px 20px
+}
+
+.transition-container {
+  margin-top: 50px;
+  width: 300px;
+  height: 300px;
+  background: red;
+  transition-duration: 1s;
+  transition-property: transform
+}
+
+.transition-container:hover {
+  background: blue;
+  transform: rotate(-45deg);
+  transition-duration: 2s;
+}
+
+.container {
+  margin: 50px;
+  height: 100vh
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  transition-duration: 2s;
+  transform: translateX(500px)
+}
+
+.box.one {
+  background: red;
+  width: 500px;
+  height: 80px;
+  color: white;
+  transition-timing-function: linear
+}
+.box.two {
+  background: blue;
+  width: 500px;
+  height: 80px;
+  color: white;
+  transition-timing-function: ease
+
+}
+.box.three {
+  background: green;
+  width: 500px;
+  height: 80px;
+  color: white;
+  transition-timing-function: ease-in
+
+}
+.box.four {
+  background: purple;
+  width: 500px;
+  height: 80px;
+  color: white;
+  transition-timing-function: ease-in-out
+
+
+}
+
